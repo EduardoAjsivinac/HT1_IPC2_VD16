@@ -51,5 +51,34 @@ namespace HT1_IPC2
             } while (b != 0);
             return mcd;
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            {
+                try
+                {
+                    double a = double.Parse(textBox1.Text);
+                    double b = double.Parse(textBox2.Text);
+                    double c = double.Parse(textBox3.Text);
+                    double x1 = (a * a + Math.Sqrt(b * b - 4 * a * c))/(2*a);
+                    double x2 = (a * a - Math.Sqrt(b * b - 4 * a * c)) / (2 * a);
+                    Label4.Text = "X1= " + x1;
+                    Label5.Text = "X2= " + x2;
+                    
+
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Datos mal ingresados o raices imaginarias" + ex);
+                }
+            }
+                
+
+        }
     }
 }
