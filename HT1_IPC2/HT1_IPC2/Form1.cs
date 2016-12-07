@@ -96,5 +96,25 @@ namespace HT1_IPC2
                 
 
         }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            {
+                try
+                {
+                    double a = double.Parse(textBox1.Text);
+                    double b = double.Parse(textBox2.Text);
+                    double c = double.Parse(textBox3.Text);
+                    double x1 = Math.Pow(Math.Pow(a, b), c);
+                    Label4.Text = x1.ToString();
+
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Datos mal ingresados o raices imaginarias" + ex);
+                }
+            }
+
+        }
     }
 }
