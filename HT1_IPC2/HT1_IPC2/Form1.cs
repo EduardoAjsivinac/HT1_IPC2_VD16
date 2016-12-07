@@ -61,7 +61,7 @@ namespace HT1_IPC2
                 double c = double.Parse(textBox3.Text);
                 double x1 = Math.Abs( Math.Min(a,b)*c);
                 Label4.Text = "|c* min(a b)|";
-                Label5.Text = x1.ToString();
+                Label5.Text = x1.ToString()+" 201503584";
 
 
             }
