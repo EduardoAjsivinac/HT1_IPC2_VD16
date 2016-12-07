@@ -54,6 +54,22 @@ namespace HT1_IPC2
 
         private void button3_Click(object sender, EventArgs e)
         {
+            try
+            {
+                double a = double.Parse(textBox1.Text);
+                double b = double.Parse(textBox2.Text);
+                double c = double.Parse(textBox3.Text);
+                double x1 = Math.Abs( Math.Min(a,b)*c);
+                Label4.Text = "|c* min(a b)|";
+                Label5.Text = x1.ToString();
+
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Datos mal ingresados" + ex);
+            }
+
 
         }
 
